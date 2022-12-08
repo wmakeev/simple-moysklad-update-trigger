@@ -14,7 +14,10 @@ const env = cleanEnv(process.env, {
   TRIGGER_VALUE_JSON: str()
 })
 
-const ms = Moysklad({ fetch, userAgent: '' })
+const ms = Moysklad({
+  fetch,
+  userAgent: 'github.com/wmakeev/simple-moysklad-update-trigger'
+})
 
 /** @type {AttributeMetadataCollection} */
 const attributesMetadataColl = await ms.GET(
