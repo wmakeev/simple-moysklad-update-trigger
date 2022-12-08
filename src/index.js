@@ -45,7 +45,7 @@ if (!Array.isArray(docIdsToUpdate) || docIdsToUpdate.length === 0) {
   throw new Error('Пустой список идентификаторов для обновления')
 }
 
-// Обновляем не спеша по очереди (никуда не спешим) ...
+// Обновляем не спеша по очереди
 for (const id of docIdsToUpdate) {
   if (typeof id !== 'string') {
     throw new Error(`Идентификатор должен быть строкой - ${id}`)
