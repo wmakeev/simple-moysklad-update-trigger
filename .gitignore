@@ -1,0 +1,16 @@
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# npm
+node_modules
+
+# env
+.env*
+!.env.example
+
+# temp
+/__temp
